@@ -88,7 +88,7 @@ async def add_aura(member, amount):
         return
     player = await GetPlayer(member)
     aura = player["Aura"]
-    calculated_aura = aura - amount
+    calculated_aura = aura + amount
     Player_ref.update({"Aura": calculated_aura})
 
 def auraEmbed(member, aura):
